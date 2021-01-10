@@ -1,0 +1,361 @@
+html {
+    /*自適應全局100%高度所需*/
+    width: 100%; height: 100%;
+    padding: 0; margin:0;
+}
+
+body {
+    /*自適應全局100%高度所需*/
+    width: 100%; height: 100%;
+    padding: 0; margin:0;
+}
+
+#warpBg{
+    /*遊戲背景*/
+    width: 100%; height: 100%;
+    padding: 0; margin:0;
+    background: yellowgreen;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+/* -------左邊區塊 start------- */
+#lineContainerLeft{
+    /*音樂線條容器-左*/
+    width: 70px; height: 100%;
+    padding: 0; margin:0;
+    transform: translate(-50%, 0%);
+    background: white;
+    position: absolute; left:15%;
+}
+
+#LeftLine{
+    /*音樂線條-左*/
+    width: 10px; height: 100%;
+    padding: 0; margin:0;
+    transform: translate(-50%, 0%);
+    /* background: red; */
+    background: url("../img/line.png") repeat ;
+    position: absolute; left:50%; 
+}
+
+#LeftBox01{
+    /*音樂線條-左 box01*/
+    width: 30px; height: 30px;
+    padding: 0; margin:0;
+    transform: translate(-50%, -50%);
+    background: url("../img/box.png") no-repeat ;
+    background-size: cover;
+    position: absolute; left:50%; top: 15%;
+}
+
+#LeftBox02{
+    /*音樂線條-左 box02*/
+    width: 150px; height: 150px;
+    padding: 0; margin:0;
+    transform: translate(-50%, -50%);
+    background: blue;
+    background-size: cover;
+    position: absolute; left:50%; top: 35%;
+}
+
+#LeftBox03{
+    /*音樂線條-左 box03*/
+    width: 30px; height: 30px;
+    padding: 0; margin:0;
+    transform: translate(-50%, -50%);
+    background: url("../img/box.png") no-repeat ;
+    background-size: cover;
+    position: absolute; left:50%; top: 55%;
+}
+
+#LeftBox04{
+    /*音樂線條-左 box04*/
+    width: 30px; height: 30px;
+    padding: 0; margin:0;
+    transform: translate(-50%, -50%);
+    background: url("../img/box.png") no-repeat ;
+    background-size: cover;
+    position: absolute; left:50%; top: 75%;
+}
+
+#LeftBox05{
+    /*音樂線條-左 box05*/
+    width: 30px; height: 30px;
+    padding: 0; margin:0;
+    transform: translate(-50%, -50%);
+    background: url("../img/box.png") no-repeat ;
+    background-size: cover;
+    position: absolute; left:50%; top: 95%;
+}
+
+/* -------左邊區塊 end------- */
+
+/* -------右邊區塊 start------- */
+#lineContainerRight{
+    /*音樂線條容器-右*/
+    width: 70px; height: 100%;
+    padding: 0; margin:0;
+    transform: translate(-50%, 0%);
+    background: white;
+    position: absolute; left:85%;
+}
+
+#RightLine{
+    /*音樂線條-右*/
+    width: 10px; height: 100%;
+    padding: 0; margin:0;
+    transform: translate(-50%, 0%);
+    background: url("../img/line.png") repeat ;
+    position: absolute; left:50%; 
+}
+
+#RightBox01{
+    /*音樂線條-右 box01*/
+    width: 30px; height: 30px;
+    padding: 0; margin:0;
+    transform: translate(-50%, -50%);
+    background: url("../img/box.png") no-repeat ;
+    background-size: cover;
+    position: absolute; left:50%; top: 15%;
+}
+
+#RightBox02{
+    /*音樂線條-右 box02*/
+    width: 150px; height: 150px;
+    padding: 0; margin:0;
+    transform: translate(-50%, -50%);
+    background: blue;
+    background-size: cover;
+    position: absolute; left:50%; top: 35%;
+}
+
+#RightBox03{
+    /*音樂線條-右 box03*/
+    width: 30px; height: 30px;
+    padding: 0; margin:0;
+    transform: translate(-50%, -50%);
+    background: url("../img/box.png") no-repeat ;
+    background-size: cover;
+    position: absolute; left:50%; top: 55%;
+}
+
+#RightBox04{
+    /*音樂線條-右 box04*/
+    width: 30px; height: 30px;
+    padding: 0; margin:0;
+    transform: translate(-50%, -50%);
+    background: url("../img/box.png") no-repeat ;
+    background-size: cover;
+    position: absolute; left:50%; top: 75%;
+}
+
+#RightBox05{
+    /*音樂線條-右 box05*/
+    width: 30px; height: 30px;
+    padding: 0; margin:0;
+    transform: translate(-50%, -50%);
+    background: url("../img/box.png") no-repeat ;
+    background-size: cover;
+    position: absolute; left:50%; top: 95%;
+}
+
+/* -------右邊區塊 end------- */
+
+/* -------中間區塊 start------- */
+#ContainerCenter{
+    /*中間區塊*/
+    width: 320px;
+    height: 240px;
+    padding: 0; margin:0;
+    /* background: rgb(205, 50, 192); */
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    z-index: 0;
+}
+
+#webcam{
+    width: 320px;
+    height: 240px;
+    /* background: rgb(2, 1, 2); */
+    position: absolute; left: 50%; bottom: 0%;
+    transform: translate(-50%, 0%);
+    border: none;
+    z-index: 1;
+    display: none;
+}
+
+#canvasDraw{
+    width: 320px;
+    height: 240px;
+    /* background: rgb(233, 218, 233); */
+    position: absolute; left: 50%; bottom: 0%;
+    transform: translate(-50%, 0%);
+    border: none;
+    z-index: 2;
+}
+
+#startBtn{
+    /*開始按鈕*/
+    width: 85px;
+    height: 45px;
+    background: url("../img/button_play.png") no-repeat ;
+    background-size: cover;
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    z-index: 100;
+}
+/* -------中間區塊 end------- */
+
+/* -------上方區塊 start------- */
+
+#lineContainerUp{
+    /*上方區塊*/
+    width: 100%;
+    height: 100px;
+    padding: 0; margin:0;
+    position: absolute; left: 50%; top: 13%;
+    transform: translate(-50%, -50%);
+    border: none;
+    z-index: 0;   
+}
+
+#messageContainer{
+    width: 100%;
+    height: 50px;
+    padding: 0; margin:0;
+    background: black;
+    position: absolute; left: 50%; top: 0px;
+    transform: translate(-50%, 0%);
+    border: none;
+    opacity:0.8;
+    z-index: 1;  
+}
+
+#status{
+    width: 100%;
+    height: 40px;
+    padding: 0; margin:0;
+    position: absolute; left: 50%; top: 35%;
+    transform: translate(-50%, -50%);
+    /* background: pink; */
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    font-size: 40px;
+}
+
+#score{
+    /*分數區塊*/
+    width: 96px; height:44px;
+    padding: 0; margin:0;
+    /* background: rgb(205, 50, 192); */
+    /* background: url("../img/button_play.png") no-repeat ; */
+    background-size: cover;
+    position: absolute; left: 50%; bottom: 0px;
+    transform: translate(-50%, 0%);
+    border: none;
+    display: none;
+}
+
+.number{
+    /*分數顯示*/
+    width: 24px; height:44px;
+    padding: 0; margin:0;
+    /* background: url("../img/score/font_0.png") no-repeat ; */
+    background-repeat: no-repeat ;
+    background-size: cover;
+    position: absolute; left: 50%; bottom: 0px;
+    transform: translate(0%, 0%);
+    border: none;
+    display: none;
+}
+
+/* -------上方區塊 end------- */
+
+/* -------下方區塊 start------- */
+
+#lineContainerDown{
+    /*上方區塊*/
+    width: 100%;
+    height: 50px;
+    padding: 0; margin:0;
+    position: absolute; left: 50%; top: 90%;
+    transform: translate(-50%, -50%);
+    border: none; 
+}
+
+#ipStatus{
+    width: 100%;
+    height: 40px;
+    padding: 0; margin:0;
+    position: absolute; left: 50%; top: 0px;
+    transform: translate(-50%, 0%);
+    /* background: pink; */
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    font-size: 40px;
+}
+
+#predictStatus{
+    width: 100%;
+    height: 10px;
+    padding: 0; margin:0;
+    position: absolute; left: 50%; top: 40px;
+    transform: translate(-50%, 0%);
+    /* background: pink; */
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(83, 54, 0);
+    font-size: 10px;
+}
+/* -------下方區塊 end------- */
+
+#preload-00 { background: url(../img/score/font_0.png) no-repeat -100px -100px; }
+#preload-01 { background: url(../img/score/font_1.png) no-repeat -100px -100px; }
+#preload-02 { background: url(../img/score/font_2.png) no-repeat -100px -100px; }
+#preload-03 { background: url(../img/score/font_3.png) no-repeat -100px -100px; }
+#preload-04 { background: url(../img/score/font_4.png) no-repeat -100px -100px; }
+#preload-05 { background: url(../img/score/font_5.png) no-repeat -100px -100px; }
+#preload-06 { background: url(../img/score/font_6.png) no-repeat -100px -100px; }
+#preload-07 { background: url(../img/score/font_7.png) no-repeat -100px -100px; }
+#preload-08 { background: url(../img/score/font_8.png) no-repeat -100px -100px; }
+#preload-09 { background: url(../img/score/font_9.png) no-repeat -100px -100px; }
+
+#testBtnLeft{
+    /*test left 按鈕*/
+    width: 45px;
+    height: 45px;
+    padding: 0; margin:0;
+    background: rgb(0, 0, 0);
+    background-size:cover;
+    position: absolute; left: 30%; top: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    display: none;
+}
+
+#testBtnRight{
+    /*test Right 按鈕*/
+    width: 45px;
+    height: 45px;
+    padding: 0; margin:0;
+    background: rgb(0, 0, 0);
+    background-size:cover;
+    position: absolute; left: 70%; top: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    display: none;
+} 
+
+#headTitle{
+    /*開始標題*/
+    width:236px; height:77px;
+    /* background-image: url("../img/text_ready.png"); */
+    background-repeat:no-repeat ;
+    position: absolute; left: 53px; top: 100px;
+}

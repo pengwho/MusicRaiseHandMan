@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>fighting</title>
+
+    <!-- https://ithelp.ithome.com.tw/articles/10195279 -->
+    <meta name="viewport" content="width=device-width,height=device-height,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+</head>
+
+<body>
+    <!-- <audio src="sound/loop568.wav" loop="loop" autoplay id="back-sound"></audio>
+    <audio src="" autoplay id="jump-sound"></audio> -->
+
+    <!--遊戲背景-->
+    <div id="warpBg">
+        <!-- 左邊區塊 -->
+        <div id="lineContainerLeft">
+            <div id="LeftLine"></div>
+            <div id="LeftBox01"></div>
+            <div id="LeftBox02"></div>
+            <div id="LeftBox03"></div>
+            <div id="LeftBox04"></div>
+            <div id="LeftBox05"></div>
+        </div>
+
+        <!-- 右邊區塊 -->
+        <div id="lineContainerRight">
+            <div id="RightLine"></div>
+            <div id="RightBox01"></div>
+            <div id="RightBox02"></div>
+            <div id="RightBox03"></div>
+            <div id="RightBox04"></div>
+            <div id="RightBox05"></div>
+        </div>
+
+        <!-- 中間區塊 -->
+        <div id="ContainerCenter">
+            <!--開始按鈕-->
+            <button id="startBtn" disabled></button>
+            <video id="webcam" autoplay width="320" height="240"></video>
+            <canvas id="canvasDraw"></canvas>
+        </div>
+
+        <!-- 上方區塊 -->
+        <div id="lineContainerUp">
+            <div id="messageContainer">
+                <p id="status">Model is loading...</p>
+            </div>
+            <div id="score">
+                <div class="number"></div>
+                <div class="number"></div>
+                <div class="number"></div>
+                <div class="number"></div>
+            </div>
+        </div>
+
+        <!-- 下方區塊 -->
+        <div id="lineContainerDown">
+            <p id="ipStatus">Server IP is none.</p>
+            <p id="predictStatus">none.</p>
+        </div>
+
+        <!--test按鈕-->
+        <button id="testBtnLeft"></button>
+        <button id="testBtnRight"></button>
+        
+
+
+        <div id="score">
+            <div class="number"></div>
+            <div class="number"></div>
+            <div class="number"></div>
+            <div class="number"></div>
+        </div>
+
+        <div id="headTitle"></div>
+
+        <!-- Preload Images -->
+        <div>
+            <div id="preload-00"></div>
+            <div id="preload-01"></div>
+            <div id="preload-02"></div>
+            <div id="preload-03"></div>
+            <div id="preload-04"></div>
+            <div id="preload-05"></div>
+            <div id="preload-06"></div>
+            <div id="preload-07"></div>
+            <div id="preload-08"></div>
+            <div id="preload-09"></div>
+        </div>
+
+    </div>
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Load TensorFlow.js -->
+    <script src="model/tfjs.js"></script>
+    <!-- Load Posenet -->
+    <script src="model/posenet.js"></script>
+    <!-- Load knn-classifier -->
+    <script src="model/knn-classifier.js"></script>
+    
+    <!-- http://luchun.github.io/web-animation-api/ -->
+    <!-- https://github.com/web-animations/web-animations-js -->
+    <script src="js/web-animations.min.js"></script>
+
+    <!-- load Json -->
+    <script src="model/saveCV3.js"></script>
+
+    <script src="js/default.js"></script>
+    <script src="js/actionTrigger.js"></script>
+    <script src="js/camera.js"></script>
+    <script src="js/score.js"></script>
+    <script src="js/boxAnimation.js"></script>
+    <script src="js/block.js"></script>
+
+</body>
+
+</html>
